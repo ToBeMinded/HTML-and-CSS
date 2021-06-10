@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            为div的子元素span设置为红色（为div直接包含的span设置为红色）
+                【子元素选择器】：
+                    作用：选中指定父元素的指定子元素
+                    语法：父元素>子元素
+                【后代元素选择器】：(范围会更大)
+                    作用：选中指定元素内的指定后代
+                    语法：祖先(空格)后代
+                【选择下一个兄弟】：
+                    语法：前一个+下一个
+                【选择下面的所有兄弟】：
+                    语法：前一个~下边所有
+         */
+
+        div>span{color: red;}
+        div span{color: blue;}
+        p+span{color: green;}  /* 它要找紧挨着p的span */
+        p~span{color: blueviolet;}        
+    </style>
+
+</head>
+<body>
+    
+    <!-- 
+        不同元素的关系：
+            父元素
+                - 直接包含子元素的元素叫做父元素
+            子元素
+                - 直接被父元素包含的元素
+            祖先元素
+                - 直接或间接包含后代元素的元素
+                - 一个元素的父元素也是它的祖先元素
+            后代元素
+                - 直接或间接被祖先元素包含的元素
+                - 一个元素的子元素也是它的后代元素
+            兄弟元素
+                - 拥有相同父元素的元素是兄弟元素
+
+     -->
+
+    <div>我是一个div 
+        <p>我是div中的p元素
+            <span>我是p中的span元素</span>
+        </p>
+        <span>我是div中的span元素</span>
+    </div>
+
+    <span>
+        我是div外的span
+    </span>
+</body>
+</html>

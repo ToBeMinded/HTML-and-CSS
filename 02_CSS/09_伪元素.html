@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: aqua;
+            font-size: 20px;
+        }
+
+        /* 首字母下沉，给单独一个字母设置样式 */
+        /* 
+            伪元素：表示页面中特殊的并不真实存在的元素
+                使用 :: 开头
+                - ::first-letter 表示第一个字母
+                - ::first-line 表示第一行
+                - ::selection 表示选中的内容，拖动鼠标选中的内容
+                - ::before 表示元素的起始位置
+                - ::after 表示元素的最后位置
+                - 使用before和after必须结合content属性使用
+         */
+        div::before{
+            content: "loc";
+            color: blue;
+        }
+        div::after{
+            content: "las";
+            color:blue;
+        }
+
+         p::first-letter{
+            font-size: 40px;
+         }
+         p::first-line{
+             background-color: yellowgreen;
+         }
+         p::selection{
+             background-color: violet;
+         }
+    </style>
+
+</head>
+<body>
+    <div>
+        Hello! How are you?
+    </div>
+    <!-- 
+        伪元素就是不存在元素
+     -->
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo incidunt impedit a maxime commodi delectus non quae voluptatum beatae vero tempore asperiores itaque veritatis, eum, odit aperiam quod! Repellat, expedita!</p>
+</body>
+</html>

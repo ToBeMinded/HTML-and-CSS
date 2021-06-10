@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 
+            在CSS中能够使用颜色名来设置各种颜色
+            RGB值：
+                - 通过三种颜色的不同浓度来调配出不同的颜色
+                - 每一种颜色都在0-255（0%-100%）之间
+                - 语法：RGB(R,G,B)
+            rgba值：
+                - 在rgb的基础上加入第四个参数（0-1之间的小数），代表着透明度
+            十六进制rgb值：
+                - 语法：#rgb
+                - 颜色浓度通过 00-ff
+
+            hls值：
+                - 三个值： H L S  色相 饱和度 亮度
+                - 语法：hsl(0-360 , 0%-100% , 0%-100%)
+        */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color:rgba(76, 237, 237, 0.596);
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(red, green, blue);
+        }
+        #title{
+            color: #bbffaa;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: #bbffaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+
+    <p id="title">护眼色 #bfa</p>
+    <div class="box3"></div>
+</body>
+</html>

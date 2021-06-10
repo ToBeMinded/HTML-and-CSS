@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        在学习html标签时学习的是标签的语义
+
+        标题标签：
+            h1~h6 一共有六级标题
+            h1到h6 重要性依次减小，重要性仅次于title标签
+            一般情况下，标题只用h1到h3
+
+        在页面中独占一行的元素称为块元素（block element）
+        而标题标签都属于块元素（包括p）
+
+        hgroup标签用于把标题分组，可以将一组相关的标题放到hgroup中
+
+        p标签表示页面中的一个段落
+     -->
+     <hgroup>
+     <h1>一级</h1>
+     <h2>二级</h2>
+     <h3>三级</h3>
+     <h4>四级</h4>
+     <h5>五级</h5>
+     <h6>六级</h6>
+    </hgroup>
+     <p>在p标签中的内容会表示一个段落，这个段落会与其他行有着明显的隔开</p>
+
+     <!-- 
+        em标签用于表示语音语调的加重，但是em标签不会独占页面的一行，这叫行内元素
+        strong标签用于加黑加粗字体，也是行内元素
+
+        在页面中不会独占一行的元素称为行内元素
+      -->
+
+      <p>今天天气<em>针</em>不戳！</p>
+      <p>今天你必须<strong>跟我表白</strong></p>
+
+      <!-- blockquote表示引用的效果，会存在缩进，它是块元素 -->
+
+      鲁迅说：
+      <blockquote>这句话我从来没有说过</blockquote>
+
+      <!-- q也是引用，不过是短引用，会自动加引号，它是行内元素 -->
+
+      子曰：
+      <q>学而时习之，乐呵乐呵！</q>
+
+      <!-- br标签代表换行 -->
+      <br>还行吧，也就这样
+</body>
+</html>

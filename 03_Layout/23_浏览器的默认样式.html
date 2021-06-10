@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            默认样式：
+                - 通常情况下，浏览器会对元素设置默认样式
+                - 默认样式的存在会影响到页面的布局，通常编写网页时要去除默认值（PC）
+                - 在网页按 F12 在打开开发者工具，指哪显示那的代码
+                - 要有效率的去除默认样式，想到通配选择器
+            重置样式表：
+                - reset.css 直接去除了浏览器的所有样式
+                - normalize.css 对默认样式统一
+         */
+        body{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;  /* 这个用来设置列表的样式 */
+            margin-left: 20px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border: 1px black solid;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>I am a paragrafe</p>
+    <p>I am a paragrafe</p>
+    <p>I am a paragrafe</p>
+    <p>I am a paragrafe</p>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+</body>
+</html>

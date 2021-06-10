@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            border: 1px violet solid;
+            /* 
+                font 可以设置字体相关的所有属性
+                    语法：
+                        font: 字体大小/行高 字体族
+                        行高可以省略不写，不写时写了1.33
+                        字体大小和字体族是必须写的
+                        还可以写别的东西比如加粗和斜体，但是字体大小/行高和字体族必须在最后
+                        但是斜体和加粗也有默认值都是normal
+                
+                font-weight：字重
+                    设置字体的粗细
+                    可选值：
+                        - bold 加粗
+                        - normal 不加粗，默认值
+                        - 100-900 9个级别，百整数制（基本上没什么用）
+             */
+            font:bold italic 40px/1 serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima molestias amet, aperiam provident quidem sapiente nobis soluta natus est nemo optio. Quia consectetur et unde. Laborum quis nulla laudantium dolorem.</div>
+</body>
+</html>

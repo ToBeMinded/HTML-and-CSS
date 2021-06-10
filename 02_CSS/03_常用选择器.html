@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 需求
+            1.将所有段落设置为红色（字体）
+                【元素选择器】：根据标签名选择
+                语法：标签名{}
+                例子：p{},h1{},div{}
+            2.将单独第三句话变成蓝色
+                【id选择器】：根据元素id属性值选中一个元素
+                语法：#id属性值{}
+                例子：#box{},#red{}
+            3.将第二句话和第四句话变成黄色
+                【类选择器】：根据元素的class值选中一组元素
+                语法：.class属性值
+            4.全部
+                【通配选择器】：选中页面中的所有元素
+                语法：*{}
+
+            上述选择器会有优先级：
+                id选择器>class选择器>元素选择器>通配选择器
+
+        */
+        p{
+            color: red;
+        }
+        h1{
+            color:green;
+        }
+
+        #p3{color: royalblue;}
+
+        .t1{
+            color: yellow;
+        }
+
+        .t2{color: violet;}
+        .t3{color: aquamarine;}
+
+        *{font-size: 20px;}
+        /* 
+            当多个选择器选择同一个并都有更改时，记住网页代码是顺序编译的，下面的内容会替换上面的
+        */
+    </style>
+</head>
+<body>
+    <!-- 
+        html属性，class：它和id类似，不同的是class可以重复使用
+        可以通过class属性给元素分组
+        并且可以同时为一个元素指定多个class属性，多个属性在class的引号内部用空格隔开
+    -->
+    <h1>所谓宣布</h1>
+    <p class="t2">我宣布个事儿，我是个伞兵！</p>
+    <p class="t1">我宣布个事儿，我是个伞兵！</p>
+    <p id="p3">我宣布个事儿，我是个伞兵！</p>
+    <p class="t1">我宣布个事儿，我是个伞兵！</p>
+    <p class="t2 t3">我宣布个事儿，我是个伞兵！</p>
+    <p class="t3">我宣布个事儿，我是个伞兵！</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            /* border:10px red solid; */
+
+            /* 
+                引入outline（轮廓）：用来设置元素的轮廓线，用法和border一模一样
+                    且轮廓不会影响到可见宽的大小
+                        (且会高于文档流)
+            */
+
+            /* 
+                box-shadow：用来设置元素的阴影效果，阴影也不会影响到页面布局
+                四个值：
+                    第一个：横向偏移量，值越大越往右偏移
+                    第二个：纵向偏移量，值越大越往下偏移
+                    第三个：模糊效果,阴影的模糊半径，单位px
+                    第四个：阴影颜色，建议使用rgba调整透明度
+            */
+            box-shadow: 10px 10px 10px #ddd;   
+        }
+
+        .box:hover{
+            outline:10px red solid;
+        }
+        .box2{
+            margin-top: 10px;
+            background-color: violet;
+            width: 200px;
+            height: 200px;
+
+            /* 
+                border-radius：用来设置圆角
+                border-top-left-radius:;     左上
+                border-top-right-radius:;    右上
+                border-bottom-left-radius:;  左下
+                border-bottom-right-radius:; 右下
+                设置的内容是圆角的半径大小，单位px
+                也可以两个值，用于表示椭圆，但是用于border-radius时表示两条对角线分别修改
+                    想同时设置四个角为椭圆角，用/把两个值隔开
+            */
+            border-radius: 20px/40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <span>hello</span><br>
+    <div class="box2"></div>
+</body>
+</html>

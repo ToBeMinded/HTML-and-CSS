@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            background-color: #bfa;
+            font: italic bold 30px/1 serif;
+
+            /* 
+                text-align 文本的水平对齐
+                    - 默认值是left，靠左对齐
+                    - right 向右对齐
+                    - center 中对齐
+                    - justify 两端对齐
+            */
+            text-align: justify;
+        }
+        .box2{
+            width: 600px;
+            background-color: violet;
+            font: normal bold 30px/1 serif;
+            margin-top: 20px;
+        }
+        span{
+            font-size: 20px;
+            background-color: orange;
+            /* 
+                vertical-align 垂直对齐
+                    - baseline 基线对齐（文字都会有一个基线，字是根据基线设计的）
+                    - top 顶部对齐
+                    - bottom 底部对齐
+                    - middle 居中对齐
+                    - 还能指定值
+            */
+            vertical-align: top;
+        }
+        .btn{
+            border: 2px tomato solid;
+            /* 
+                在盒子内引入图片时，默认是图片与基线对齐，因此图片和下边距会有一定的距离
+                解决方式即可以给图片设置 vertical-align 属性使其向上对齐（top）
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat alias laudantium quibusdam aliquid libero cumque iusto, quaerat iure eaque, culpa architecto eum ea facere repellat animi perspiciatis? Voluptas, sequi modi.
+    </div>
+
+    <div class="box2">
+        今天天气<span>针不戳</span>
+    </div>
+
+    <p class="btn"></p>
+</body>
+</html>

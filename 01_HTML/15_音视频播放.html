@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        audio标签：引入音频文件，可以是外部也可以是本地文件
+            -controls：是否允许用户控制播放，且不用给值，有就能控制，没有就不能控制
+            -autoplay：自动播放，也是有就自动播放，没有就需要用户点击播放，但是目前来讲，大部分浏览器都不会对音频自动播放
+            -loop：音乐是否循环播放，有或没有决定
+            -除了通过src指定路径意外，也能通过source指定文件路径    
+
+        embed标签：音视频标签，这个标签会自动播放，但是要指定高度和宽度，不然会变得很小
+            -type：是文件的类型，格式为（文件大格式/具体格式）比如（audio/mp3）
+
+        video标签：播放视频，也有controls，loop，autoplay，src等属性，和audio基本一样
+
+        音视频文件引入时，默认情况下不允许用户自己控制播放停止的
+     -->
+     <audio src="" controls autoplay loop>这里</audio>
+     <audio controls>
+         哈哈我没有音频（这个文字在不支持播放音频的浏览器中会自动显示出来）
+        <source src="">
+        <source src="">
+     </audio>
+
+     <embed src="" type="" width="100" height="100">
+
+    <br><br><br>
+
+    <video src="" controls></video>
+</body>
+</html>

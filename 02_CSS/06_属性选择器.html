@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        【属性选择器】：
+            1.[属性值]：选择含有指定元素的元素
+            2.[属性名=属性值]：选中含有指定属性和属性值的元素
+            3.[属性名^=属性值]：选中属性名以属性值开头的元素
+            4.[属性名$=属性值]：选择属性名以属性值结尾的元素
+            5.[属性名*=属性值]：选中属性名中含有属性值的元素
+    -->
+     <style> 
+        /* 这里其实产生了一个交集选择器，前是元素选择器，后是属性选择器 */
+         p[title]{
+             color: blueviolet;
+         }
+         p[title="标题"]{
+            color: turquoise;
+         }
+     </style>
+</head>
+<body>
+    <p title="标题">伞兵排排队</p>  <!--设置了title后将鼠标停留在标签内的内容时，会显示title值 -->
+    <p title="p1">1.我是个伞兵</p>
+    <p title="p2">2.我是个伞兵</p>
+    <p title="p3">3.我是个伞兵</p>
+    <p>4.我是个伞兵</p>
+    <p>5.我是个伞兵</p>
+    <p>6.我是个伞兵</p>
+</body>
+</html> 

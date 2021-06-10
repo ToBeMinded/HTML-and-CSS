@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: #bfa;
+            border: steelblue 5px solid;
+            /* 
+                外边距（margin）：
+                    - 不会影响盒子的可见宽，而是会影响盒子的位置
+                    - 一共有4个方向的外边距
+                        - margin-top
+                        - margin-right
+                        - margin-bottom：下位边距，设置正值，下边元素会向下移动
+                        - margin-left
+                    - 元素在页面中按照自左向右排列的，会自动往左上靠，所以默认情况下如果我们设置的左和上外边距会移动元素自身，而设置下和右外边距会移动其他元素
+                    - margin也能设置负值，设置负值元素会向相反方向移动
+                    - margin的简写属性，同时设置四个方向的外边距
+             */
+             margin-top: 50px;
+             margin-left: 50px;
+             margin-bottom: 50px;
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: #bfa;
+            border:salmon 5px solid;
+            margin-top: 50px;
+            margin-left: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            position: absolute;
+            /* 
+                绝对定位（absolute）
+                    - 绝对定位的特点：
+                        1.如果不设置偏移量，则元素位置不会发生改变
+                        2.元素会从文档流中脱离
+                        3.绝对定位会改变元素的性质，行内变成块，块的宽高被内容撑开
+                        4.绝对定位也会改变元素的层级
+                        5.绝对定位元素是相对于包含块进行定位
+
+                - 包含块：
+                    - 正常情况下：包含块就是离当前元素最近的祖先块元素
+                    - 开启绝对定位情况下：包含块就是离它最近的开启定位的祖先元素
+                                        如果所有的祖先元素都没有开启定位，则相对于根元素进行定位
+                                        
+             */
+            left: 100px;
+            top: 100px;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color:#bfa;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

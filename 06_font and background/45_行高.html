@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            font-size: 50px;
+            background-color: #bfa;
+            /* 
+                行高（line height）：
+                    - 行高指文字占有的实际高度
+                    - 可以通过line-height设置行高
+                        - 行高可以直接指定一个大小，也可以直接为行高设置一个整数
+                            - 如果是整数，则行高是其中字体的倍数
+                            - 默认值是1.33
+                    - 行高指的是单行的行高，有多行就会不重叠相加
+                
+                字体框
+                    - 设置的字体管就是字体存在的格子，设置font-size实际上就是在设置字体框的高度
+                
+                行高会在字体框的上下平均分配
+
+                经常会将行高设置为和高度一样的值，使单行文字在一个元素中垂直居中
+
+                行间距 = 行高 - 字体大小
+            */
+            line-height: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        今天天气针不戳
+    </div>
+</body>
+</html>

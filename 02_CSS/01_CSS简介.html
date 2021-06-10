@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head font-size='18px'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <style>
+        p{
+            color:aqua;
+            font-size: 40px;
+        }
+    </style> -->
+
+    <!-- stylesheet是样式表的意思 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        CSS：是网页三部分中的表现，控制外在显示
+            - 中文叫做层叠样式表（层叠是指网页其实是立体的结构，一层压着一层）
+            - 通过CSS可以给网页的每一层设置样式，我们最后只能看到最上面一层
+     -->
+
+     <!-- 
+         使用CSS修改元素的样式
+            - 内联样式或行内样式
+                - 在标签内部通过style属性设置元素样式
+                - 而这个style的值就是CSS，符合CSS的语法
+                - 而style的值里面是一个名值对，名和值用冒号隔开
+                - 多个名值对之间用分号隔开，用分号结尾
+            - 问题：内联样式只能对一个标签生效，如果想影响到多个元素，只能复制到别的标签去，所以开发时千万别用内联样式
+      -->
+    <p style="color: tomato; font-size: 30px;">鹅鹅鹅鹅鹅鹅鹅鹅鹅鹅鹅鹅鹅</p>
+    <p>猫猫猫猫猫猫猫猫猫猫猫猫猫</p>
+     <!-- 
+        第二种方式：内部样式表
+            - 在head中写入style，然后通过CSS的选择器来选中元素并为其设置各种样式，这种样式更方便重复使用
+            - 用一个 p{} 设定所有的p能使用这个style的属性
+            - 但是如果在某一个p使用行内样式的style，这时值会产生覆盖
+        问题：内部样式表只能对一个网页起作用，不能跨页面复用
+      -->
+
+    <!-- 
+        第三种样式：外部样式表
+            - 将样式编写到外部的CSS文件中
+            - 然后通过link标签引入外部的CSS文件
+            - link标签也写在head里面
+            - 意味着想使用这些样式的网页都可以对其进行引用，是样式可以在不同的页面之间进行复用
+            - 可以最大限度的使用到浏览器的缓存机制，从而加快网页的加载速度，提高用户体验
+        - 缓存机制：浏览器的缓存机制将会把已经访问过的东西暂时放入缓存器中，下次访问时是从本地直接访问
+    -->
+</body>
+</html>

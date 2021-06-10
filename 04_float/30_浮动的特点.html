@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            float:right;
+            /* 
+                浮动元素不会盖住文字，文字会自动环绕在浮动元素的周围，所以我们可以利用浮动设置文字环绕图片的效果
+             */
+        }
+        .box2{
+            margin-top: 10px;
+            float: left;
+            background-color: violet;
+            /* 
+                元素设置浮动从文档流中脱离后，元素的一些特点也会发生变化
+                脱离文档流特点：
+                    块元素：
+                        1.不再独占页面一行
+                        2.块元素的宽度和高度都被内容撑开（没有指定高宽时）
+                    行内元素：
+                        行内元素脱离文档流后会变成块元素，特点和块元素一样
+                    总之，脱离文档流后，不需要再区分所谓块元素和行内元素了
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis commodi! Possimus ex a, quae repellendus
+        adipisci voluptas ipsum consequuntur odit, mollitia ullam distinctio. Enim, inventore? Quo doloribus vel earum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis commodi! Possimus ex a, quae repellendus
+        adipisci voluptas ipsum consequuntur odit, mollitia ullam distinctio. Enim, inventore? Quo doloribus vel earum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nobis commodi! Possimus ex a, quae repellendus
+        adipisci voluptas ipsum consequuntur odit, mollitia ullam distinctio. Enim, inventore? Quo doloribus vel earum.
+    </p>
+    <div class="box2">hello</div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            font-size: 50px;
+            background-color: #bfa;
+
+            /* 
+                text-decoration 设置文本修饰
+                    - none 无
+                    - underline 下划线
+                    - line-through 删除线
+                    - overline 上划线
+                    - 还能加线的颜色
+            */
+            text-decoration: overline tomato;
+        }
+        .box2{
+            font-size: 20px;
+            background-color: orange;
+            margin-top: 200px;
+            /* 
+                white-space 空白区域
+                    - 用来设置网页中如何处理空白
+                    - 默认值是normal
+                    - 可选值：
+                        - nowrap 不换行
+                        - pre 保留空白
+            */
+            white-space: pre;
+            overflow: hidden;
+            text-overflow: ellipsis;  /* 溢出内容设置省略号 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        今天天气针不戳
+    </div>
+    <div class="box2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae, quam incidunt, consequatur quasi aut dolore saepe, voluptatem cumque modi amet quibusdam voluptas? Aspernatur fugiat magnam perspiciatis sequi in eos?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae, quam incidunt, consequatur quasi aut dolore saepe, voluptatem cumque modi amet quibusdam voluptas? Aspernatur fugiat magnam perspiciatis sequi in eos?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore recusandae, quam incidunt, consequatur quasi aut dolore saepe, voluptatem cumque modi amet quibusdam voluptas? Aspernatur fugiat magnam perspiciatis sequi in eos?
+    </div>
+</body>
+</html>

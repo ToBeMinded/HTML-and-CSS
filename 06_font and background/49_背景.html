@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            /* 
+                background-color:; 设置背景颜色
+                background-image: url(路径); 设置背景图片
+                    - 背景颜色和背景图片可以同时设置，此时颜色会成为图片的背景色
+                    - 如果背景图片小于元素，则背景图片会自动在元素中平铺，将元素铺满
+                    - 如果背景图片大于元素，则将有一部分图片无法显示
+                background-repeat:; 设置背景的重复方式
+                    - repeat 默认值，背景会沿着x，y轴双方向重复
+                    - repeat-x 沿着x轴重复
+                    - repeat-y 沿着y轴重复
+                    - no-repeat 不重复
+                background-position:; 设置背景图片的位置
+                    - 通过top left right bottom center表示方位的词来设置位置
+                        使用方位词时必须同时指定两个值，只写一个的话，默认第二个值是center
+                    - 通过偏移量指定位置
+                        使用水平方向的偏移量和垂直方向的偏移量
+                        第一个值是x方向，第二个值是y方向
+                
+                background-clip:; 设置背景的范围
+                    - border-box 默认值，背景会出现在边框的下面
+                    - padding-box 背景不会出现在边框内，只出现在内边距和内容区里
+                    - content-box 背景只会出现在内容区
+                background-origin:; 背景图片偏移量计算的原点
+                    - padding-box 默认值，background-position从内边距处开始计算
+                    - content-box 背景图片的偏移量从内容区处计算
+                    - border-box 背景图片的偏移量从边框顶点处开始计算
+                background-size:; 设置背景图片的大小
+                    - 第一个值表示宽度，第二值表示高度
+                    - 只写一个值，则第二个值等比例缩放
+                    - cover 图片比例不变，将元素铺满
+                    - contain 图片比例不变，保证图片完整显示
+                background-attachment:; 设置背景图片是否会跟着元素移动
+                    - scroll 默认值，背景图片会跟随元素移动
+                    - fixed 背景图片会固定在窗口中的位置
+                background:; 同时设置那些东西，并且没有顺序要求
+                    - 注意，size要写在position后面
+                    - origin必须在clip的前面，因为属性值一样
+
+                图片属于网页的外部资源，外部资源都需要浏览器单独发送请求加载
+                    - 浏览器加载外部资源时，是按需加载的，不用则不加载
+                    - 而特定状态下加载的图片是需要时间的，所以会出现闪烁的情况
+            */
+            background-position-x: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

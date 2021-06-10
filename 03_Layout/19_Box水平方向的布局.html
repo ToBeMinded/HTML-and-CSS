@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 800px;
+            height: 200px;
+            border:10px red solid;
+            margin-bottom: 10px;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            margin-left: 100px;
+            /* 
+                元素的水平方向的布局：
+                    - 元素在其父元素中水平方向的位置由以下几个属性共同决定
+                        - margin-left   默认值是0
+                        - border-left   默认值是0
+                        - padding-left  默认值是0
+                        - width         默认值是auto
+                        - padding-right 默认值是0
+                        - border-right  默认值是0
+                        - margin-right  
+                    - 一个元素在其父元素中其水平布局必须要满足以下等式
+                        - 上面7个值加起来=其父元素内容区的宽度（必须满足）
+                        - 如果等式不满足，称为过渡约束，等式会自动调整
+                            - 如果7个值中没有为auto的值，则浏览器会自动调整margin-right值以使等式满足
+                            - 这7个值中的width，margin-left，margin-right可以设置为auto，如果某个值为auto，则会自动调整auto值以使等式成立
+                            - 如果有width和外边距都是auto，宽度会调整到最大，外边距会为0（宽度优先）
+                            - 如果只有两个外边距是auto，会自动使两个外边距相同
+                                - 所以经常利用这个特点使子元素在父元素中水平居中
+                                - 实例:  width:xxxpx;
+                                        margin:0 auto;
+
+             */
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            border: 3px blue solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="inner"></div>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        图标字体（iconfont）
+            - 在网页中经常会需要使用一些图标
+            - 可以通过图片来引入图标，但图片大，且不灵活
+            - 所以可以将图标设置为字体，通过font-face的形式对图标进行引用，这样能够用过字体的形式修改图标
+            - 去网上找到各种图标字体库，直接引用
+
+        fontawesome 使用步骤：
+            1.下载 https://fontawesome.com/
+            2.解压
+            3.将css文件夹和webfonts引入到项目中
+            4.将all.css引入到网页中 ( <link rel="stylesheet" href="地址"> )
+            5.使用图标字体
+                - 直接通过类名使用图标字体
+                    class="fas fa-bell"
+                    class="fab fa-accessible-icon"
+                - 通过伪元素设置图标字体
+                    1.找到要设置的图标元素通过before或after选中
+                    2.在content中设置字体编码
+                    3.设置字体的样式：
+                        fab
+                        font-family: 'Font Awesome 5 Brands';
+
+                        fas
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
+                - 通过实体使用图标字体
+                    &#x图表的编码;
+                    但是要记得写类（fas 和 fab）
+
+     -->
+</body>
+</html>

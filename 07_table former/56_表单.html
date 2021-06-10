@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        表单
+            - 用于提交数据
+            - 在网页中使用表单用于将本地的数据提交给远程的服务器
+            - 使用form标签创建表单
+                - action属性：必要属性，指定表单提交服务器的地址
+                - name属性：表单的名字，其值在网页中唯一 
+     -->
+    <form action="./target.html">
+        <!-- 添加表单项 -->
+        <!-- 要使数据被提交到服务器中，元素必须加入name属性 -->
+
+        <!-- 
+            文本框
+                - input 里面也可以有value属性，但是这个value不是发给服务器的，是默认值，是文本
+        -->
+        文本框
+        <input type="text" name="hello">
+        <br>
+
+        <!-- 密码框 -->
+        密码框
+        <input type="password" name="key">
+        <br>
+
+        <!-- 单选按钮
+                - 多个按钮实现单选，必须要有相同的name属性值
+                - 必须要有value属性来表示传递给服务器的值
+                - checked属性代表默认选中
+         -->
+        单选框
+        <input type="radio" value="a" name="danxuan" checked>
+        <input type="radio" value="b" name="danxuan">
+        <br>
+
+        <!-- 
+            多选框
+                - 同样需要相同的name属性
+         -->
+        多选框
+        <input type="checkbox" name="link" value="a">
+        <input type="checkbox" name="link" value="b">
+        <input type="checkbox" name="link" value="c">
+        <br>
+
+        <!-- 
+            下拉列表
+        -->
+        下拉列表
+        <select name="lala">
+            <option value="i">选项1</option>
+            <option value="ii">选项2</option>
+            <option value="iii">选项3</option>
+            <option value="iiii">选项4</option>
+        </select>
+        <br>
+
+        <!-- 提交按钮 属性value指定按钮里面的文字 -->
+        <input type="submit" value="哈哈" name="tijiao"> 
+        <br>
+
+        <!-- 普通按钮 -->
+        <input type="button" value="普通按钮">
+        <br>
+
+        <!-- 重置按钮，把表单的内容全部换成默认值 -->
+        <input type="reset" value="重置按钮">
+        <br>
+
+        <!-- 调整颜色 -->
+        <input type="color" name="color">
+        <br>
+
+        <!-- 邮件 -->
+        邮件
+        <input type="email" name="email">
+        <br>
+
+        <!-- 一些属性 -->
+        <!-- 
+            autocomplete 自动补全，off就是关闭 
+            readonly 只读，无法更改，但其中数据会提交
+            disabled 将表单项设置为禁用，数据不会提交
+            autofocus 设置表单项自动获取焦点
+        -->
+        <input type="text" name="username" autocomplete="on"><br>
+        <input type="text" name="username1" value="pick you" readonly><br>
+        <input type="text" name="username2" value="pick you on" disabled><br>
+        <input type="text" name="username3" value="shut up" autofocus><br>
+
+    </form>
+</body>
+</html>

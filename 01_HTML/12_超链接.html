@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接</title>
+</head>
+<body>
+    <!-- 
+        超链接：让我们从一个页面跳转到其他页面，或者是当前页面的指定位置
+        使用a标签定义，且a标签是一个行内元素，在a标签中可以嵌套除它自身之外任何的元素（块和行内）
+            属性：href 指定跳转的地址
+                它的值可以是一个外部网站的地址
+                也可以是本地（内部）地址
+     -->
+
+     <a href="https://www.baidu.com">跳转百度</a><br>
+     <a href="11_列表.html">跳转列表处</a>
+
+     <!-- 
+         绝对路径：直接是完整的地址或网址
+         相对路径：当我们需要跳转一个服务器内部的页面时可以使用相对路径
+            一般都会使用 ../ 或 ./ 开头，其中 ./ 可以省略不写
+            如果不写 ./ 也不写 ../ 就相当于写了 ./ (就是当前目录的意思)
+
+            ./ 表示当前文件所在的目录（完全可以省略）
+                -当前页面就是超链接写在的那个文件里
+
+            ../ 表示当前文件所在目录的上级目录
+      -->
+      <p>详情看超链接测试文件</p>
+
+      <!-- 
+          target属性：指定超链接打开的位置
+            可选值：默认值：_self 在当前页面打开超链接
+                   _blank 在一个新的页面中打开超链接
+       -->
+
+       <br><br>
+       <a href="https://www.baidu.com" target="_self">在当前页面打开超链接</a><br>
+       <a href="https://www.baidu.com" target="_blank">在一个新的页面中打开超链接</a><br>
+       
+       <a href="#bottom">到底部去</a><br>
+       <a href="#p8">到第8段</a>
+
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p id="p8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe impedit ex est, molestiae, eligendi enim dolor quaerat facere quia dicta unde rem quisquam molestias! Excepturi accusamus quia ratione dolorem laboriosam.</p>
+
+       <!-- 
+           超链接也可以跳转到页面的其他地方
+           1.可以将超链接的href属性设置为#号，点击超链接页面会转移到当前页面的顶部
+           2.可以跳转到页面的指定位置，只需将href属性设置为 "#目标元素的id值" ，不仅仅是a能设置id，是个标签（元素）都行
+           
+           id 属性：id是唯一不重复的
+                - 每一个标签都可以添加一个id属性，id属性就是元素的唯一标识，一个页面中不能出现同一个id属性
+                - id名字不能是数字开头
+        -->
+
+        <a href="#" id="bottom">回到顶部</a>
+
+        <!-- 
+            在开发中，可以用#号作为href代码的一个占位符
+            也可以使用 javascript:; 作为超链接href的一个属性，这个超链接什么都不会发生
+         -->
+</body>
+</html>
